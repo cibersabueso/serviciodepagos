@@ -1,0 +1,24 @@
+basePath: /
+host: localhost:8080
+info:
+  contact: {}
+  description: Esta es una muestra de API con Swagger.
+  title: API de Ejemplo con Swagger
+  version: "1"
+paths:
+  /:
+    get:
+      consumes:
+      - '*/*'
+      description: Devuelve un mensaje de bienvenida
+      produces:
+      - text/plain
+      responses:
+        "200":
+          description: ¡Bienvenido a la página de inicio!
+          schema:
+            type: string
+      summary: Muestra la página de inicio
+      tags:
+      - inicio
+swagger: "2.0"

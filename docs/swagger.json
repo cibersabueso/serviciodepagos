@@ -1,0 +1,36 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Esta es una muestra de API con Swagger.",
+        "title": "API de Ejemplo con Swagger",
+        "contact": {},
+        "version": "1"
+    },
+    "host": "localhost:8080",
+    "basePath": "/",
+    "paths": {
+        "/": {
+            "get": {
+                "description": "Devuelve un mensaje de bienvenida",
+                "consumes": [
+                    "*/*"
+                ],
+                "produces": [
+                    "text/plain"
+                ],
+                "tags": [
+                    "inicio"
+                ],
+                "summary": "Muestra la página de inicio",
+                "responses": {
+                    "200": {
+                        "description": "¡Bienvenido a la página de inicio!",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
